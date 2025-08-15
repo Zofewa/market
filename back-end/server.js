@@ -42,13 +42,11 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
+const conLink = `mysql://root:MXYwNCOkUSoQhmndclPrqOBnmGGVtWsX@mysql.railway.internal:3306/railway`;
+
 // Create a connection pool instead of single connection
 const pool = mysql.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT,
-    database: process.env.DB_NAME,
+    conLink,
     connectionLimit: 10, 
     acquireTimeout: 10000,  //10 secs
     charset: 'utf8mb4'

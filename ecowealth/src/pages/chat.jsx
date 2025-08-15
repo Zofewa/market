@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import User from "../src/components/user";
+import User from "../components/user";
 import VerticalBar from "../components/vertbar";
 import PeopleOnChat from "../components/peoplerecentonchat";
 import Menu from "../components/menu";

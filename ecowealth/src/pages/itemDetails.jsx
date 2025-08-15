@@ -1,7 +1,7 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import LocationIcon from '..assets/marker.svg';
+import LocationIcon from '../assets/marker.svg';
 import Seller from '../assets/user.svg';
 
 const ItemDetails = () => {
