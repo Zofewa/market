@@ -1,0 +1,1 @@
+await axios.post("http://localhost:5001/logout", {}, { withCredentials: true });
